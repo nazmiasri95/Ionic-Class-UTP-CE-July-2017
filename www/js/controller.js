@@ -1,12 +1,14 @@
 app
 
-	.controller("MainCtrl", ["$scope", function ($scope) {
+	.controller("MainCtrl", ["$scope", "dataService", function ($scope, dataService) {
 
-		console.log("This is the Main Controller");
+		$scope.foods = dataService.getAllRecipe();
+
+		console.log($scope.foods);
 
 	}])
 
-	.controller("RecipeCtrl", ["$scope", function ($scope) {
+	.controller("RecipeCtrl", ["$scope", "dataService", function ($scope, dataService) {
 
 		console.log("This is the Recipe Controller");
 
