@@ -62,3 +62,15 @@
         };
 
       })
+
+### 10. Inside the main.html
+      <ion-view view-title="Main page">
+        <ion-content padding="true" class="note-content">
+          <div class="row">
+
+          <!-- Content goes here -->
+
+
+          </div>
+        </ion-content>
+      </ion-view>
